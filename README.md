@@ -1,4 +1,4 @@
-###.I <3 Jordan.
+### I <3 Jordan.
 
 A landing page that promotes tourism in Jordan.
 A project prepared for [Coderstrust](https://www.coderstrust.com/) Frontend development course in jordan.
