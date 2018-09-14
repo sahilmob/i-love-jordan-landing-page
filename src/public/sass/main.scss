@@ -1,0 +1,461 @@
+@import 'bootstrap';
+@import 'fontawesome';
+@import 'solid';
+@import 'regular';
+
+body{
+color: #405360;
+position: relative;
+}
+.container-fluid{
+    padding: 0;
+}
+nav{
+    background: #D0BFA3 !important;
+    color: #34344A;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    color: #405360 !important;
+}
+
+.video-container{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    .video-overlay-wraper {
+        position: relative;
+        box-sizing: border-box;
+        max-width: 100vw;
+        video {
+            width: 100%;
+        }
+        .video-overlay{
+            background: black;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+
+        }    
+    }
+    .video-content{
+        position: absolute;
+        max-width: 70vw;
+        border-radius: 4px;
+        top: 20vh;
+        left: calc(7vw);
+        >img{
+            width: 70vw;
+            max-width: 70vw;
+        }
+    }
+}
+
+.main-content{
+.section-container{
+    background: rgba($color: #D0BFA3, $alpha: 1);
+    width: 100%;
+    margin-top: 500px;
+    &:first-of-type{
+        margin-top: 0;
+    }
+    .section{
+        max-width: 1140px;
+        margin: auto;
+        padding: 30px 10px;
+        min-height: 100vh;
+        box-sizing: content-box;
+        .section-title{
+            margin-top: 30px;
+        }
+        .section-content{
+            margin-top: 30px;
+        }
+    }
+}
+.section-container-middle{
+    background: #405360;
+    color: #D0BFA3;
+}
+    .about-jordan{
+        > .section-content{
+            > .left{
+                flex-grow: 1;
+                color: #405360;
+                >.item{
+                    cursor: pointer;
+                    border-right: 5px solid #405360;
+                    padding-right: 60px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    transition: all 0.2s ease-in-out;
+                    >h6{
+                        text-align: center
+                    }
+                    &:last-of-type{
+                        padding-bottom: 0;
+                        margin-bottom: 20px;
+                    }
+                    .item-icon{
+                        border: 3px solid #405360;
+                        border-radius: 50%;
+                        padding: 30px;
+                        font-size: 18px;
+                        transition: border 0.2s ease-in-out;
+                    }
+                    .item-title{
+                        margin-top: 15px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        color: #CD5B50;
+                        border-right: 5px solid #CD5B50;
+                        .item-icon{
+                            border: 3px solid #CD5B50;
+                        }
+                    }
+                }
+                .item.active{
+                    color: #CD5B50;
+                    border-right: 5px solid #CD5B50;
+                    .item-icon{
+                            border: 3px solid #CD5B50;
+                        }
+                }
+                
+            }
+            .right{
+                max-width: 70%;
+                .item-content-active{
+                    display: flex;
+                    > .item-img{
+                        max-width: 90%;
+                        width: 90%;
+                        max-height: 50vh;
+                        height: 50vh;
+                        border-radius: 3px;
+                    }
+                    .item-text-content{
+                        max-width: 90%;
+                        margin-top: 40px;
+                        > h6{
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .item-content{
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .culture{
+        margin-top: 50px;
+    }
+    .where-to-go{
+        .section-content{
+            .day{
+                position: relative;
+                margin-top: 50px;
+                .day-text{
+                    padding: 4vh;
+                    background: rgba($color: #E6DCC4, $alpha: 0.85);
+                    position: absolute;
+                    top: 10vh;
+                    left: 10vh;
+                    max-width: 80%;
+                    p{
+                        font-size: 0.9vw;
+                    }
+                }
+            }
+            .day-img{
+                border-radius: 3px;
+                width: 95%;
+                max-width: 95%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
+footer{
+    background: #405360 !important;
+    height: 50px;
+    color: #D0BFA3; 
+    padding-top: 10px;
+    div{
+        a{
+            text-decoration: none;
+            color: black;
+            opacity: 0.5;
+            &:hover{
+                text-decoration: none;
+                color: black;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-only(xl){
+    .video-container{
+        .video-content{
+            >img{
+                width: 70vw;
+                max-width: 70vw;
+            }
+        }
+    }
+}
+@include media-breakpoint-only(lg){
+    .video-container{
+        .video-content{
+            >img{
+                width: 70vw;
+                max-width: 70vw;
+            }
+        }
+    }
+    .about-jordan{
+        .section-content{
+            flex-direction: column;
+            > .left{
+               display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+                   .item{
+                       border-right: none !important;
+                       padding: 0 !important;
+                       
+                   }
+            }
+            > .right{
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-only(md) {
+    body{
+        overflow-x: hidden;
+    }
+    .video-container{
+        .video-overlay-wraper {
+            max-width: 150vw;
+            video {
+                width: 150vw;
+            }
+        }
+        .video-content{
+            >img{
+                width: 60vw;
+                max-width: 60vw;
+            }
+        }
+    }
+    .about-jordan{
+        .section-content{
+            flex-direction: column;
+            > .left{
+               display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+                   .item{
+                       border-right: none !important;
+                       padding: 0 !important;
+                   }
+            }
+            > .right{
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+        .where-to-go{
+        .section-content{
+            .day{
+                .day-text{
+                    p{
+                        font-size: 10px !important;
+                    }
+                }
+            }
+        }
+    } 
+ }
+
+@include media-breakpoint-only(sm) {
+    body{
+        overflow-x: hidden
+    }
+    .video-container{
+        .video-overlay-wraper {
+            max-width: 150vw;
+            video {
+                width: 150vw;
+            }
+        }
+        .video-content{
+            top: 20vh;
+            left: calc(7vw);
+            >img{
+                width: 70vw;
+                max-width: 70vw;
+            }
+        }
+    }
+    .about-jordan{
+        .section-content{
+            flex-direction: column;
+            > .left{
+               display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+                   .item{
+                       border-right: none !important;
+                       padding: 0 !important;
+                       
+                   }
+            }
+            > .right{
+                margin: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+    .where-to-go{
+        .section-content{
+            .day{
+                position: initial !important;
+                margin: 0px !important;
+                width: 100% !important;
+                .day-text{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                    background: none !important;
+                    position: initial !important;
+                    max-width: 100% !important;
+                    width: 100% !important;
+                    margin: 0 !important;
+                    p{
+                        font-size: 13px !important;
+                    }
+                }
+            }
+            .day-img{
+                display: none !important;
+            }
+        }
+    } 
+ }
+@include media-breakpoint-only(xs) {
+    body{
+        overflow-x: hidden
+    }
+    .video-container{
+        .video-overlay-wraper {
+            max-width: 320vw;
+            video {
+                width: 320vw;
+            }
+        }
+        .video-content{
+            top: 30vh;
+            left: calc(10vw);
+            >img{
+                width: 70vw;
+                max-width: 70vw;
+            }
+        }
+    }
+    .about-jordan{
+        .section-content{
+            flex-direction: column;
+            > .left{
+               display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+                   .item{
+                       border-right: none !important;
+                       padding: 0 !important;
+                       >.item-icon{
+                        padding: 5px !important;
+                        border: 2px solid #405360 !important;
+                       }
+                       >i,
+                       >h6{
+                        font-size: 6px !important;
+                       }
+                       > h6{
+                        max-width: 30px;
+                        text-align: center;
+                       }
+                   }
+                   .item.active{
+                    .item-icon{
+                            border: 2px solid #CD5B50 !important;
+                        }
+                }
+            }
+            > .right{
+                margin: auto;
+                margin-top: 10px;
+                .item-content-active{
+                    .item-text-content{
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+   .where-to-go{
+        .section-content{
+            .day{
+                position: initial !important;
+                margin: 0px !important;
+                width: 100% !important;
+                .day-text{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                    background: none !important;
+                    position: initial !important;
+                    max-width: 100% !important;
+                    width: 100% !important;
+                    margin: 0 !important;
+                    p{
+                        font-size: 13px !important;
+                    }
+                }
+            }
+            .day-img{
+                display: none !important;
+            }
+        }
+    } 
+    footer{
+        height: 100px;
+        padding-top: 0;
+    .container{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center;
+        div{
+            margin-top: 17px;
+        }
+        }        
+    }
+ }
+
+

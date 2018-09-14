@@ -1,0 +1,28 @@
+{
+  "name": "i-love-jordan",
+  "version": "1.0.0",
+  "description": "A landing page promoting Jordan as a tourism destination, a project created as a partisipation in a contest organized by coderstrust.com for frontend development training course  based in jordan",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Sahil H. Mobaidin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "bower": "^1.8.4",
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "main-bower-files": "^2.13.1"
+  }
+}

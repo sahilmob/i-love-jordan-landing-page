@@ -1,0 +1,22 @@
+{
+  "name": "i-love-jordan",
+  "description": "A landing page promoting Jordan as a tourism destination, a project created as a partisipation in a contest organized by coderstrust.com for frontend development training course  based in jordan",
+  "main": "server.js",
+  "authors": [
+    "Sahil H. Mobaidin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "^5.3.1",
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.3"
+  }
+}
