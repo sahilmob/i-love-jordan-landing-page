@@ -10,11 +10,11 @@ A project prepared for [Coderstrust](https://www.coderstrust.com/) Frontend deve
 > 2- ExpressJS
 
 ### Development dependencies
-> 1- NodeJS
-> 2- Nodemon
-> 4- ExpressJS
-> 4- Gulp, Gulp-Cli & some Gulp plugins
-> 5- Bower
+1. NodeJS
+2. Nodemon
+4. ExpressJS
+4. Gulp, Gulp-Cli & some Gulp plugins
+5. Bower
 
 ### start production server: run the following
 ```bash
@@ -31,7 +31,7 @@ gulp
 ```
 ### then you can navigate to ttp://localhost:7000
 
-To run build script
+### To run build script
 ```bash
 gulp build
 ```
