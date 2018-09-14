@@ -6,8 +6,8 @@ A project prepared for [Coderstrust](https://www.coderstrust.com/) Frontend deve
 ### Live version [I love Jordan](https://i-love-jordan.herokuapp.com/)
 <br/>
 ### Production dependencies
->  1- NodeJS
->  2- ExpressJS
+> 1- NodeJS
+> 2- ExpressJS
 
 <br/>
 Development dependencies
